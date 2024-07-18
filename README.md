@@ -5,6 +5,7 @@
 ## Descrição
 
 Este projeto é uma landing page desenvolvida para o músico, produtor, ator de teatro e matemático Bertrand Leal. A landing page tem como objetivo apresentar os serviços oferecidos por Bertrand, incluindo produção de trilhas sonoras, aulas de canto, teclado, piano, acordeão e teoria musical. Além disso, destaca o curso "Método Tecladista Completo", disponível na Hotmart.
+
 ## Tecnologias Utilizadas
 
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
@@ -12,7 +13,9 @@ Este projeto é uma landing page desenvolvida para o músico, produtor, ator de 
 - **Tailwind CSS**: Framework de CSS utilitário para criar designs personalizados rapidamente.
 - **TypeScript**: Superset de JavaScript que adiciona tipagem estática ao código.
 - **SWC**: Compilador super-rápido para JavaScript/TypeScript.
+
 ## Rodar localmente
+
 Clone o projeto
 
 ```bash
