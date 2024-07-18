@@ -9,6 +9,7 @@ Este projeto é uma landing page desenvolvida para o músico, produtor, ator de 
 
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
 - **Vite**: Ferramenta de build rápida para desenvolvimento web moderno.
+- **Tailwind CSS**: Framework de CSS utilitário para criar designs personalizados rapidamente.
 - **TypeScript**: Superset de JavaScript que adiciona tipagem estática ao código.
 - **SWC**: Compilador super-rápido para JavaScript/TypeScript.
 ## Rodar localmente
