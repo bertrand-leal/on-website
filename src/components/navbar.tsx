@@ -70,7 +70,7 @@ export default function Navbar() {
                   </button>
                   {isActive && (
                     <motion.div
-                      className="h-1 bg-on-yellow"
+                      className="h-1 bg-on-yellow bg-opacity-100"
                       initial={{ width: 0 }}
                       animate={{ width: '100%' }}
                       transition={{ duration: 0.5, type: 'spring' }}
@@ -111,7 +111,7 @@ export default function Navbar() {
                   </button>
                   {isActive && (
                     <motion.div
-                      className="h-1 bg-on-yellow"
+                      className="h-1 bg-on-yellow bg-opacity-100"
                       initial={{ width: 0 }}
                       animate={{ width: '100%' }}
                       transition={{ duration: 0.5, type: 'spring' }}
