@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ["Oswald", "sans-serif"]
+      },
+      colors: {
+        'on-yellow': "#FFA800",
+        'on-white': '#F5F5F5',
+        'on-black': "#0E0E0E"
+      }
+    },
   },
   plugins: [],
 }
