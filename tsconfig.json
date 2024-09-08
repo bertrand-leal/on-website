@@ -2,8 +2,12 @@
   "files": [],
   "compilerOptions": {
     "paths": {
-      "@src/*": ["./src/*"],
-      "@assets/*": ["./public/assets/*"]
+      "@src/*": [
+        "./src/*"
+      ],
+      "@assets/*": [
+        "./public/assets/*"
+      ]
     }
   },
   "references": [
