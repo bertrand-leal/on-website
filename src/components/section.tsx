@@ -1,10 +1,11 @@
 import { type MotionProps, motion } from 'framer-motion'
-import type { PropsWithChildren } from 'react'
+import type { HTMLAttributes, PropsWithChildren } from 'react'
 
 type SectionProps = PropsWithChildren<{
   className?: string
 }> &
-  MotionProps
+  MotionProps &
+  HTMLAttributes<HTMLDivElement>
 
 export default function Section({
   className,

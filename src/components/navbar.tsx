@@ -45,12 +45,12 @@ export default function Navbar() {
   }, [screenHeight])
 
   return (
-    <Section className="fixed w-full bg-black bg-opacity-20 backdrop-blur text-on-white">
+    <Section className="fixed w-full bg-black bg-opacity-20 text-on-white backdrop-blur">
       <nav
-        className={cn('transition-all duration-500 h-24 max-lg:h-20', {})}
+        className={cn('h-24 transition-all duration-500 max-lg:h-20', {})}
         style={isMobileNavOpen ? { height: `${screenHeight}px` } : {}}
       >
-        <div className="flex flex-row h-24 max-lg:h-20 items-center justify-start gap-24 py-4 max-sm:justify-between max-lg:py-2">
+        <div className="flex h-24 flex-row items-center justify-start gap-24 py-4 max-sm:justify-between max-lg:h-20 max-lg:py-2">
           <img src="on-logo.png" alt="on-logo" className="h-full" />
           <ul className="flex flex-row justify-center gap-10 max-sm:hidden">
             {LINKS.map((item) => {
@@ -58,7 +58,7 @@ export default function Navbar() {
               return (
                 <li
                   key={item.name}
-                  className={cn('text-2xl mb-1', {
+                  className={cn('mb-1 text-2xl', {
                     'text-on-yellow': isActive,
                   })}
                 >
@@ -90,7 +90,7 @@ export default function Navbar() {
           </button>
         </div>
         {isMobileNavOpen && (
-          <ul className="flex flex-col w-full h-full justify-center items-center gap-4 -mt-20">
+          <ul className="-mt-20 flex h-full w-full flex-col items-center justify-center gap-4">
             {LINKS.map((item) => {
               const isActive = currentSection === item.section
               return (
