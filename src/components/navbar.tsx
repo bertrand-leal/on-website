@@ -45,7 +45,7 @@ export default function Navbar() {
   }, [screenHeight])
 
   return (
-    <Section className="fixed w-full bg-black bg-opacity-20 z-10 text-on-white backdrop-blur">
+    <Section className="fixed z-10 w-full bg-black bg-opacity-20 text-on-white backdrop-blur">
       <nav
         className={cn('h-24 transition-all duration-500 max-lg:h-20', {})}
         style={isMobileNavOpen ? { height: `${screenHeight}px` } : {}}
