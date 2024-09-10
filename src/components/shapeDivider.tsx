@@ -1,4 +1,3 @@
-import cn from '@src/utils/cn'
 import type { SVGProps } from 'react'
 
 export type ShapeDividerProps = {

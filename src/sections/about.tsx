@@ -3,14 +3,14 @@ import Section from '@src/components/section'
 export default function About() {
   return (
     <Section
-      className="xl:h-[75svh] bg-on-white max-sm:h-[85svh] lg:h-[80svh] md:h-[75svh]"
+      className="bg-on-white max-sm:h-[85svh] md:h-[75svh] lg:h-[80svh] xl:h-[75svh]"
       id="about"
     >
       <div className="flex h-full flex-col md:flex-row">
         <img
           src="/images/about-img.png"
           alt="about-img"
-          className="md:h-[70%] xl:h-[80%] -mt-1"
+          className="-mt-1 md:h-[70%] xl:h-[80%]"
         />
         <div className="flex h-full w-full flex-col items-end justify-start gap-5 pt-3 lg:gap-40 lg:pt-10">
           <h4 className="text-5xl text-on-yellow lg:text-6xl">
