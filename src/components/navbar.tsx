@@ -51,7 +51,7 @@ export default function Navbar() {
         style={isMobileNavOpen ? { height: `${screenHeight}px` } : {}}
       >
         <div className="flex h-24 flex-row items-center justify-start gap-24 py-4 max-sm:justify-between max-lg:h-20 max-lg:py-2">
-          <img src="on-logo.png" alt="on-logo" className="h-full" />
+          <img src="/images/on-logo.png" alt="on-logo" className="h-full" />
           <ul className="flex flex-row justify-center gap-10 max-sm:hidden">
             {LINKS.map((item) => {
               const isActive = currentSection === item.section
