@@ -19,7 +19,7 @@ export default function useCurrentSectionId({
           }
         })
       },
-      { threshold: 0.5 },
+      { threshold: 0.7 },
     )
 
     // get all section ids
