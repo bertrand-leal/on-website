@@ -1,20 +1,27 @@
+import cn from '@src/utils/cn'
 import type { SVGProps } from 'react'
 
 export type ShapeDividerProps = {
   className?: string
+  vectorClassName?: string
 } & SVGProps<SVGSVGElement>
 
 export default function ShapeDivider({
   className,
+  vectorClassName,
   width = 1440,
   height = 50,
   ...props
 }: ShapeDividerProps) {
   return (
-    <div className="absolute w-full overflow-hidden" style={{ lineHeight: 0 }}>
+    <div
+      className={cn('absolute w-full overflow-hidden', className)}
+      style={{ lineHeight: 0 }}
+    >
       <svg
         {...props}
-        className={className}
+        // className={className}
+        className={cn('w-full max-sm:h-5 max-lg:h-7', vectorClassName)}
         data-name="Layer 1"
         viewBox="0 0 1200 120"
         preserveAspectRatio="none"

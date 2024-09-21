@@ -27,13 +27,13 @@ export default function Section({
       className={cn('relative overflow-hidden', className)}
       {...props}
     >
-      {hasTopDivider && <ShapeDivider className="h-12 w-full rotate-180" />}
+      {hasTopDivider && (
+        <ShapeDivider className="-top-1 left-0 w-full rotate-180" />
+      )}
       <div className="mx-auto h-full max-w-[1440px] max-lg:px-[20px] max-2xl:px-[100px]">
         {children}
       </div>
-      {hasBottomDivider && (
-        <ShapeDivider className="absolute top-0 left-0 w-full" />
-      )}
+      {hasBottomDivider && <ShapeDivider className="-bottom-0 left-0 w-full" />}
     </motion.section>
   )
 }
