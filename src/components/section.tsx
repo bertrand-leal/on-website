@@ -33,7 +33,7 @@ export default function Section({
       <div className="mx-auto h-full max-w-[1440px] max-lg:px-[20px] max-2xl:px-[100px]">
         {children}
       </div>
-      {hasBottomDivider && <ShapeDivider className="-bottom-0 left-0 w-full" />}
+      {hasBottomDivider && <ShapeDivider className="-bottom-1 left-0 w-full" />}
     </motion.section>
   )
 }

@@ -9,3 +9,11 @@
 html {
   background-color: #000;
 }
+
+.slick-arrow::before {
+  display: none;
+}
+
+.slick-dots .slick-active {
+  scale: 1.5;
+}

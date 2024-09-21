@@ -9,7 +9,6 @@ export default function Course() {
       hasBottomDivider
       id="course"
     >
-      (
       <div className="flex h-full w-full flex-col items-start justify-center gap-8 pt-3 lg:pt-10">
         <h4 className="mb-6 text-5xl text-on-yellow lg:text-6xl">
           Método Tecladista Completo
@@ -26,7 +25,6 @@ export default function Course() {
           href="https://hotmart.com/pt-br/marketplace/produtos/tecladista-completo/D42268516G?sck=HOTMART_SITE"
         />
       </div>
-      )
     </Section>
   )
 }

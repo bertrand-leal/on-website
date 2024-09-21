@@ -10,7 +10,7 @@ export default function About() {
         <img
           src="/images/about-img.png"
           alt="about-img"
-          className="-mt-1 md:h-[70%] xl:h-[80%]"
+          className="-mt-0 md:h-[70%] xl:h-[80%]"
         />
         <div className="flex h-full w-full flex-col items-end justify-start gap-5 pt-3 lg:gap-40 lg:pt-10">
           <h4 className="text-5xl text-on-yellow lg:text-6xl">

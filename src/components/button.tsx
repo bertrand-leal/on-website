@@ -30,7 +30,8 @@ export default function Button({
           }}
           whileTap={{ scale: 0.9 }}
           className={cn(
-            'rounded-xl border-2 border-on-white px-3 py-2 font-normal text-2xl text-on-white',
+            'rounded-xl border-2 border-on-yellow bg-on-yellow px-3 py-2 font-normal text-2xl text-on-white',
+            ' hover:bg-on-white hover:text-on-yellow',
             className,
           )}
           {...props}
@@ -52,7 +53,7 @@ export default function Button({
           whileTap={{ scale: 0.9 }}
           className={cn(
             'rounded-xl border-2 border-on-white px-3 py-2 font-normal text-2xl text-on-white',
-            'hover:border-on-yellow hover:bg-on-yellow hover:text-on-black',
+            ' hover:bg-on-yellow',
             className,
           )}
           {...props}

@@ -4,6 +4,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import Navbar from './components/navbar'
 import About from './sections/about'
+import Classes from './sections/classes'
 import Course from './sections/course'
 import Hero from './sections/hero'
 
@@ -16,6 +17,7 @@ export default function App() {
       <Hero />
       <About />
       <Course />
+      <Classes />
     </>
   )
 }
