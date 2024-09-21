@@ -68,7 +68,7 @@ export default function SimpleSlider() {
   return (
     <div className="w-full px-5 max-sm:px-0">
       <Slider {...settings}>
-        {Slides.map((slide, index) => (
+        {Slides.map((slide) => (
           <Slide {...slide} key={slide.image} />
         ))}
       </Slider>
