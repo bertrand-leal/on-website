@@ -1,10 +1,11 @@
 import path from 'node:path'
 import react from '@vitejs/plugin-react-swc'
 import { defineConfig } from 'vite'
+import { qrcode } from 'vite-plugin-qrcode'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), qrcode()],
   resolve: {
     alias: {
       '@assets': path.resolve(__dirname, './public/assets'),
