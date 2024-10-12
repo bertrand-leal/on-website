@@ -7,6 +7,7 @@ import About from './sections/about'
 import Classes from './sections/classes'
 import Course from './sections/course'
 import Hero from './sections/hero'
+import Production from './sections/production'
 
 library.add(fab, fas, far)
 
@@ -18,6 +19,7 @@ export default function App() {
       <About />
       <Course />
       <Classes />
+      <Production />
     </>
   )
 }

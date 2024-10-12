@@ -6,13 +6,14 @@ import SoundwaveBar from './soundwaveBar'
 
 export default function Player() {
   const [isPlaying, setIsPlaying] = useState(false)
+  const [currentTime, setCurrentTime] = useState(0)
   const playerRef = useRef<ReactPlayer | null>(null)
 
 
   useEffect(() => {
-    if (playerRef.current && isPlaying) {
+    if (isPlaying && currentTime < 60) {
       // Start the music at 60 seconds
-      playerRef.current.seekTo(60, 'seconds')
+      playerRef.current?.seekTo(60, 'seconds')
     }
 
   }, [isPlaying])
@@ -50,7 +51,10 @@ export default function Player() {
           url={'/audio/production-msc.mp3'}
           playing={isPlaying}
           loop={true}
-          volume={0.3}
+          volume={0.9}
+          onProgress={({ playedSeconds }) => {
+            setCurrentTime(playedSeconds)
+          }}
         />
       </div>
     </div>

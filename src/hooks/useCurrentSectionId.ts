@@ -7,9 +7,24 @@ type UseCurrentSectionIdProps = {
 export default function useCurrentSectionId({
   sectionIds,
 }: UseCurrentSectionIdProps) {
-  const [currentSection, setCurrentSection] = useState<string>('about')
+  const [currentSection, setCurrentSection] = useState<string>('hero')
 
   useEffect(() => {
+    // Set threshold based on viewport width
+    let thresholdValue = 0.7
+    const viewportWidth = window.innerWidth
+
+    if (viewportWidth < 768) {
+      // Mobile threshold
+      thresholdValue = 0.5
+    } else if (viewportWidth >= 768 && viewportWidth < 1024) {
+      // Tablet threshold
+      thresholdValue = 0.6
+    } else {
+      // Desktop threshold
+      thresholdValue = 0.7
+    }
+
     // create an observer instance
     const sectionObserver = new IntersectionObserver(
       (entries) => {
@@ -19,11 +34,8 @@ export default function useCurrentSectionId({
           }
         })
       },
-      { threshold: 0.7 },
+      { threshold: thresholdValue },
     )
-
-    // get all section ids
-    // const sectionIds = LINKS.map((item) => item.section)
 
     // observe each section
     sectionIds.forEach((section) => {

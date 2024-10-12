@@ -26,7 +26,7 @@ export default function Navbar() {
     if (section) {
       const sectionPosition =
         section.getBoundingClientRect().top + window.scrollY
-      const offset = sectionPosition - 50
+      const offset = sectionPosition - 70
       window.scroll({
         top: offset,
         behavior: 'smooth',
