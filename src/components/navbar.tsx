@@ -21,10 +21,16 @@ export default function Navbar() {
     sectionIds: LINKS.map((item) => item.section),
   })
 
-  const scrollToSection = (section: string) => {
-    const element = document.getElementById(section)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      const sectionPosition =
+        section.getBoundingClientRect().top + window.scrollY
+      const offset = sectionPosition - 50
+      window.scroll({
+        top: offset,
+        behavior: 'smooth',
+      })
     }
   }
 
@@ -45,7 +51,7 @@ export default function Navbar() {
   }, [screenHeight])
 
   return (
-    <Section className="fixed z-10 w-full bg-black bg-opacity-50 text-on-white backdrop-blur">
+    <Section className="fixed z-20 w-full bg-black bg-opacity-50 text-on-white backdrop-blur">
       <nav
         className={cn('h-24 transition-all duration-500 max-lg:h-20', {})}
         style={isMobileNavOpen ? { height: `${screenHeight}px` } : {}}

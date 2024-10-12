@@ -20,7 +20,7 @@ export default function Course() {
           práticas.
         </p>
         <Button
-          label="Veja no hotmart"
+          label="Veja no Hotmart"
           variant="secondary"
           href="https://hotmart.com/pt-br/marketplace/produtos/tecladista-completo/D42268516G?sck=HOTMART_SITE"
         />

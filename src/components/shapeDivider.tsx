@@ -4,13 +4,15 @@ import type { SVGProps } from 'react'
 export type ShapeDividerProps = {
   className?: string
   vectorClassName?: string
+  vectorFill?: string
 } & SVGProps<SVGSVGElement>
 
 export default function ShapeDivider({
   className,
   vectorClassName,
   width = 1440,
-  height = 50,
+  height = 10,
+  vectorFill = '#f5f5f5',
   ...props
 }: ShapeDividerProps) {
   return (
@@ -28,7 +30,7 @@ export default function ShapeDivider({
       >
         <path
           d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-          fill="#f5f5f5"
+          fill={vectorFill}
         />
       </svg>
     </div>
