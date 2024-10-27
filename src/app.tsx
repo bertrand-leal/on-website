@@ -5,7 +5,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import Navbar from './components/navbar'
 import About from './sections/about'
 import Classes from './sections/classes'
+import Contact from './sections/contact'
 import Course from './sections/course'
+import Footer from './sections/footer'
 import Hero from './sections/hero'
 import Production from './sections/production'
 
@@ -20,6 +22,8 @@ export default function App() {
       <Course />
       <Classes />
       <Production />
+      <Contact />
+      <Footer />
     </>
   )
 }

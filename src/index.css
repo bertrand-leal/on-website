@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .hero-bg {
-  background: linear-gradient(328deg, #0E0E0E 46.39%, #333 87.87%);
+  background: linear-gradient(328deg, #0e0e0e 46.39%, #333 87.87%);
 }
 
 html {

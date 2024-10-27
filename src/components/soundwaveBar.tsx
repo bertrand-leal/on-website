@@ -29,18 +29,18 @@ export default function SoundwaveBar({
   }, [isPlaying, dotLottie])
 
   return (
-    <div className="flex-1 relative flex">
-      <div className="w-full bg-on-yellow h-1 rounded-full" />
+    <div className="relative flex flex-1">
+      <div className="h-1 w-full rounded-full bg-on-yellow" />
       <DotLottieReact
         className={cn(
-          'block absolute w-[160%] z-0 -top-[43px]',
+          '-top-[43px] absolute z-0 block w-[160%]',
           {
             '-left-[30px]': isRight,
             '-right-[30px]': isLeft,
           },
           isPlaying
-            ? 'opacity-100 max-lg:opacity-0 max-sm:opacity-100'
-            : 'max-lg:opacity-0 opacity-0 max-sm:opacity-0',
+            ? 'opacity-100 max-sm:opacity-100 max-lg:opacity-0'
+            : 'opacity-0 max-sm:opacity-0 max-lg:opacity-0',
         )}
         src="/animations/soundwave.lottie"
         autoplay={false}

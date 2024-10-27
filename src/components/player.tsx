@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useRef, useState, useEffect } from 'react'
-import ReactPlayer from 'react-player'
 import { motion } from 'framer-motion'
+import { useEffect, useRef, useState } from 'react'
+import ReactPlayer from 'react-player'
 import SoundwaveBar from './soundwaveBar'
 
 export default function Player() {
@@ -32,13 +32,13 @@ export default function Player() {
   }, [isPlaying, currentTime])
 
   return (
-    <div className="relative w-72 flex flex-col items-center gap-5">
+    <div className="relative flex w-72 flex-col items-center gap-5">
       <img
         alt="cover"
         src="/images/cover-img.png"
         className="rounded-2xl border-4 border-on-yellow"
       />
-      <div className="flex flex-row justify-center items-center w-full gap-2">
+      <div className="flex w-full flex-row items-center justify-center gap-2">
         <SoundwaveBar isPlaying={isPlaying} />
         <motion.button
           className="z-10"
