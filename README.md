@@ -19,13 +19,13 @@ Este projeto é uma landing page desenvolvida para o músico, produtor, ator de 
 Clone o projeto
 
 ```bash
-  git clone https://github.com/mvacoimbra/bertrand-website.git
+  git clone https://github.com/bertrand-leal/on-website.git
 ```
 
 Vá para o diretório
 
 ```bash
-  cd bertrand-website
+  cd on-website
 ```
 
 Instale as dependências
