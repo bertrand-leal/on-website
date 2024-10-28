@@ -7,7 +7,7 @@ export default function Contact() {
       id="contact"
       className="bg-on-black py-10"
       backgroundChildren={
-        <div className="flex w-full justify-between pr-4 max-md:flex-col-reverse max-md:gap-10">
+        <div className="flex w-full justify-between pr-4 lg:pr-[100px] max-md:flex-col-reverse max-md:gap-10">
           <div className="left-0 w-[40%] bg-on-white max-md:w-full lg:w-1/2 lg:w-[30%]">
             <Keyboard />
           </div>
