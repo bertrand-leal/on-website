@@ -18,7 +18,7 @@ const WHITE_KEYS: WhiteKeys[] = [
     key: 'C',
     label: 'WhatsApp',
     icon: ['fab', 'whatsapp'],
-    link: 'wa.me/+5562991159812',
+    link: 'https://api.whatsapp.com/send?phone=5562991159812&text=Ol%C3%A1!%20Estava%20navegando%20no%20site%20da%20On%20e%20queria%20conversar%20sobre...',
     blackKey: 'C-sharp',
   },
   {
